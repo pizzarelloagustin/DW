@@ -54,6 +54,7 @@ body{
 }
 
 .headerSectionUnoNavList li a{
+    transition: all 0.15s;
     text-decoration: none;
     color: #D4ECDD;
     
@@ -143,6 +144,71 @@ main{
     width: 80%;
 }
 
+/* Grid Titulares */
+
+.mainTitulares{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 400px 100vh 100vh;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a2"
+    "a3 a4"
+    "a5 a6";
+}
+
+.mainSectionUno_tutoriales{
+    grid-area: a2;
+    justify-self: center;
+    align-self: center;
+    background-color: #345B63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.mainSectionUno_tutoriales h2{
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 80%;
+}
+
+.mainSectionUno_tutoriales p{
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    width: 80%;
+}
+
+.videoTutoriales{
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+.video-1{
+    grid-area: a3;
+    padding-top: 10vh;
+}
+
+.video-2{
+    grid-area: a4;
+    padding-top: 10vh;
+}
+
+.video-3{
+    grid-area: a5;
+    padding-bottom: 10vh;
+}
+
+.video-4{
+    grid-area: a6;
+    padding-bottom: 10vh;
+}
+
 /* index */
 /* Formateo mainSectionUno */
 .mainSectionUno h2{
@@ -179,13 +245,11 @@ main{
 /* tutoriales */
 /* Formateo mainSectionUno_tutoriales */
 .mainSectionUno_tutoriales h2{
-    font-size: 30px;
     font-family: 'Roboto', sans-serif;
     text-align: center;  
 }
 
 .mainSectionUno_tutoriales p{
-    font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;  
 }
@@ -279,6 +343,13 @@ main{
 	width: 100%;
 }
 
+/* HOVERS */
+
+.headerSectionUnoNavList a:hover{
+    color: white;
+    font-size: 1.77vw;
+}
+
 /* Media Query Responsive */
 
 @media screen and (max-width: 600px) {
@@ -314,7 +385,7 @@ main{
     .mainIndex{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 50vh 85vh 80vh 90vh;
+        grid-template-rows: 50vh 75vh 50vh 50vh;
         grid-template-areas:
         "a1" 
         "a2"
@@ -345,7 +416,7 @@ main{
         position: absolute;
         left: 10vw;
         width: 80vw;
-        height: 85vh;
+        height: 75vh;
         background-color: #112031bd;
         display: flex;
         flex-direction: column;
@@ -377,12 +448,13 @@ main{
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 80hv;
+        height: 50hv;
     }
 
     .mainSectionDosDivUno h2{
         font-size: 7vw;
         padding: 0 2vw;
+        padding-top: 20vw;
         font-family: 'Roboto', sans-serif;
         text-align: center;  
     }
@@ -390,6 +462,7 @@ main{
     .mainSectionDosDivUno p{
         font-size: 5vw;
         padding: 0 10vw;
+        padding-bottom: 10vw;
         font-family: 'Ubuntu', sans-serif;
         text-align: center;  
     }
@@ -408,7 +481,7 @@ main{
     }
 
     .footer{
-        height: 50vh;
+        height: 55vh;
     }
     
     .footer p{
@@ -546,7 +619,7 @@ main{
     }
 
     .footer{
-        height: 50vh;
+        height: 65vh;
     }
     
     .footer p{
