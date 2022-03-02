@@ -1,0 +1,558 @@
+
+/* Reseteo de Margenes y Padding */
+*{
+    margin:0;
+    padding:0;
+}
+
+/* Dimensiones al Body */
+body{
+    height: auto;
+    width: 100vw;
+}
+
+/* CSS Header */
+
+
+.headerSectionUno{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.headerSectionUnoDivUno{
+    width: 35%;
+    /*height: 10vw;*/
+    display: flex;
+    justify-content: center;
+}
+
+.headerSectionUnoImg{
+    /*height: 100%;*/
+    width: 7vw;
+}
+
+.headerSectionUnoDivDos{
+    width: 65%;
+}
+
+/* Corresponde al nav */
+.headerSectionUno{  
+    background-color: #345B63;
+    height: 150px;
+}
+
+.headerSectionUnoNavList{
+    list-style-type: none;
+}
+
+.headerSectionUnoNavList li{
+    font-size: 1.6vw;
+    font-family: 'Roboto', sans-serif;
+    display: inline-block;
+    padding: 0rem 1.5rem;
+}
+
+.headerSectionUnoNavList li a{
+    text-decoration: none;
+    color: #D4ECDD;
+    
+}
+
+/* CSS main general */
+/* Corresponde al Titular */
+
+main{
+    background-color: #D4ECDD;
+}
+
+.mainTitular{
+    grid-area: a1;
+    justify-self: center;
+    align-self: center;
+}
+
+.mainTitular h1{
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.mainTitular p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+}
+
+/* Primer Area */
+
+.mainSectionUnoBackground{
+    background-image: url("../img/ejemplo_diseno.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mainSectionUno{
+    position: relative;
+}
+
+.mainSectionUnoDiv{
+    position: absolute;
+    left: 10vw;
+    width: 35vw;
+    height: 400px;
+    background-color: #112031bd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/* Grid Index */
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 400px 600px;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a2"
+    "a3 a4";
+}
+
+.mainSectionUno{
+    grid-area: a2;
+}
+
+.mainSectionDosDivUno{
+    grid-area: a4;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 400px;
+}
+
+.mainSectionDosDivDos{
+    grid-area: a3;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+}
+
+/* index */
+/* Formateo mainSectionUno */
+.mainSectionUno h2{
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center; 
+    color: white; 
+}
+
+.mainSectionUno p{
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center; 
+    color: white; 
+}
+
+/* Formateo mainSectionDos */
+.mainSectionDosDivUno h2{
+    font-size: 2.5rem;
+    padding: 0 0.5rem;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;  
+}
+
+.mainSectionDosDivUno p{
+    font-size: 1.4rem;
+    padding: 0 0.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;  
+}
+
+/* tutoriales */
+/* Formateo mainSectionUno_tutoriales */
+.mainSectionUno_tutoriales h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;  
+}
+
+.mainSectionUno_tutoriales p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;  
+}
+
+/* herramienta */
+
+/* diseno */
+/* Formateo mainSectionUno_disenos */
+.mainSectionUno_disenos h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;  
+}
+
+.mainSectionUno_disenos p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;  
+}
+
+/* Formateo mainSectionDos_disenos */
+.mainSectionDos_disenos h2{
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;  
+}
+
+.mainSectionDos_disenos p{
+    font-size: 16px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;  
+}
+
+/* contacto */
+.mainSectionUno_contacto form{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mainSectionUno_contacto form div{
+    padding-bottom: 20px;
+}
+
+.mainSectionUno_contacto label{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+
+/* footer */
+.footer{
+    background-color: #112031;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer p{
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    color: white;
+}
+
+.footerDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80vw;
+}
+
+/* Video Responsive */
+
+.video-responsive{
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video-responsive iframe{
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+/* Media Query Responsive */
+
+@media screen and (max-width: 600px) {
+
+    .headerSectionUno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 3vh;
+    }
+
+    .headerSectionUnoImg{
+        width: 13vw;
+        padding: 3vw;
+    }
+
+    .headerSectionUnoNavList{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+   .headerSectionUnoNavList li{
+        font-size: 6vw;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        padding: 0rem 1.5rem;
+    }
+  
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 85vh 80vh 90vh;
+        grid-template-areas:
+        "a1" 
+        "a2"
+        "a3" 
+        "a4";
+    }
+
+    .mainTitular{
+        grid-area: a1;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .mainTitular h1{
+        font-size: 8vw;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 2vw 0;
+    }
+    
+    .mainTitular p{
+        font-size: 4vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    }
+
+    .mainSectionUnoDiv{
+        position: absolute;
+        left: 10vw;
+        width: 80vw;
+        height: 85vh;
+        background-color: #112031bd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mainSectionUno h2{
+        font-size: 7vw;
+        padding: 0 2vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center; 
+        color: white; 
+    }
+    
+    .mainSectionUno p{
+        font-size: 5vw;
+        padding: 0 2vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center; 
+        color: white; 
+    }
+
+    .mainSectionDosDivUno{
+        grid-area: a3;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 80hv;
+    }
+
+    .mainSectionDosDivUno h2{
+        font-size: 7vw;
+        padding: 0 2vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;  
+    }
+    
+    .mainSectionDosDivUno p{
+        font-size: 5vw;
+        padding: 0 10vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;  
+    }
+    
+    .mainSectionDosDivDos{
+        grid-area: a4;
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+    }
+
+    .footerDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        height: 50vh;
+    }
+    
+    .footer p{
+        font-size: 5vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: white;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+
+    .headerSectionUno{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 3vh;
+    }
+
+    .headerSectionUnoImg{
+        width: 8vw;
+        padding: 3vw;
+    }
+
+    .headerSectionUnoNavList{
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+   .headerSectionUnoNavList li{
+        font-size: 4vw;
+        font-family: 'Roboto', sans-serif;
+        display: inline-block;
+        padding: 0rem 1.5rem;
+    }
+  
+    .mainIndex{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55vh 80vh 80vh 110vh;
+        grid-template-areas:
+        "a1" 
+        "a2"
+        "a3" 
+        "a4";
+    }
+
+    .mainTitular{
+        grid-area: a1;
+        justify-self: center;
+        align-self: center;
+    }
+    
+    .mainTitular h1{
+        font-size: 7vw;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 2vw 0;
+    }
+    
+    .mainTitular p{
+        font-size: 4vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+    }
+
+    .mainSectionUnoDiv{
+        position: absolute;
+        left: 10vw;
+        width: 80vw;
+        height: 80vh;
+        background-color: #112031bd;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .mainSectionUno h2{
+        font-size: 5vw;
+        padding: 0 2vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center; 
+        color: white; 
+    }
+    
+    .mainSectionUno p{
+        font-size: 3vw;
+        padding: 0 2vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center; 
+        color: white; 
+    }
+
+    .mainSectionDosDivUno{
+        grid-area: a3;
+        justify-self: center;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 80hv;
+    }
+
+    .mainSectionDosDivUno h2{
+        font-size: 6vw;
+        padding: 0 2vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;  
+    }
+    
+    .mainSectionDosDivUno p{
+        font-size: 4.2vw;
+        padding: 0 10vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;  
+    }
+    
+    .mainSectionDosDivDos{
+        grid-area: a4;
+        justify-self: center;
+        align-self: center;
+        width: 80%;
+    }
+
+    .footerDiv{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer{
+        height: 50vh;
+    }
+    
+    .footer p{
+        font-size: 3vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        color: white;
+    }
+}
