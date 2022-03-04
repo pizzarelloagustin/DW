@@ -629,3 +629,7 @@ main{
         color: white;
     }
 }
+
+.video-row{
+    width: 100vw;
+}
