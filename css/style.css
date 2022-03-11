@@ -11,53 +11,9 @@ body{
     width: 100vw;
 }
 
-/* CSS Header */
-
-
-.headerSectionUno{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-.headerSectionUnoDivUno{
-    width: 35%;
-    /*height: 10vw;*/
-    display: flex;
-    justify-content: center;
-}
-
-.headerSectionUnoImg{
-    /*height: 100%;*/
-    width: 7vw;
-}
-
-.headerSectionUnoDivDos{
-    width: 65%;
-}
-
 /* Corresponde al nav */
-.headerSectionUno{  
-    background-color: #345B63;
-    height: 150px;
-}
-
-.headerSectionUnoNavList{
-    list-style-type: none;
-}
-
-.headerSectionUnoNavList li{
-    font-size: 1.6vw;
-    font-family: 'Roboto', sans-serif;
-    display: inline-block;
-    padding: 0rem 1.5rem;
-}
-
-.headerSectionUnoNavList li a{
-    transition: all 0.15s;
-    text-decoration: none;
-    color: #D4ECDD;
-    
+.navBootstrap{
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.603);
 }
 
 /* CSS main general */
@@ -67,25 +23,32 @@ main{
     background-color: #D4ECDD;
 }
 
+/* Correspondiente a Index */
+/* Grid Index */
+
+.mainIndex{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35vh 65vh 80vh;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a2"
+    "a3 a4";
+}
+
+/* Primer Area Index */
+
 .mainTitular{
     grid-area: a1;
     justify-self: center;
     align-self: center;
 }
 
-.mainTitular h1{
-    font-size: 3.5rem;
-    font-family: 'Poppins', sans-serif;
-    text-align: center;
-}
+/* segundo Area Index */
 
-.mainTitular p{
-    font-size: 16px;
-    font-family: 'Ubuntu', sans-serif;
-    text-align: center;
+.mainSectionUno{
+    grid-area: a2;
 }
-
-/* Primer Area */
 
 .mainSectionUnoBackground{
     background-image: url("../img/ejemplo_diseno.jpg");
@@ -102,7 +65,7 @@ main{
     position: absolute;
     left: 10vw;
     width: 35vw;
-    height: 400px;
+    height: 65vh;
     background-color: #112031bd;
     display: flex;
     flex-direction: column;
@@ -110,21 +73,17 @@ main{
     justify-content: space-evenly;
 }
 
-/* Grid Index */
+/* Tercer Area Index */
 
-.mainIndex{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 400px 600px;
-    grid-template-areas: 
-    "a1 a1"
-    "a2 a2"
-    "a3 a4";
+.mainSectionDosDivDos{
+    grid-area: a3;
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.603);
 }
 
-.mainSectionUno{
-    grid-area: a2;
-}
+/* Cuarto Area Index */
 
 .mainSectionDosDivUno{
     grid-area: a4;
@@ -137,79 +96,20 @@ main{
     height: 400px;
 }
 
-.mainSectionDosDivDos{
-    grid-area: a3;
-    justify-self: center;
-    align-self: center;
-    width: 80%;
-}
-
-/* Grid Titulares */
-
-.mainTitulares{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 400px 100vh 100vh;
-    grid-template-areas: 
-    "a1 a1"
-    "a2 a2"
-    "a3 a4"
-    "a5 a6";
-}
-
-.mainSectionUno_tutoriales{
-    grid-area: a2;
-    justify-self: center;
-    align-self: center;
-    background-color: #345B63;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    height: 400px;
-}
-
-.mainSectionUno_tutoriales h2{
-    font-size: 3rem;
+/* index */
+/* Formateo mainTitular */
+.mainTitular h1{
+    font-size: 3.5rem;
     font-family: 'Poppins', sans-serif;
     text-align: center;
-    width: 80%;
 }
 
-.mainSectionUno_tutoriales p{
-    font-size: 1.7rem;
+.mainTitular p{
+    font-size: 16px;
     font-family: 'Ubuntu', sans-serif;
     text-align: center;
-    width: 80%;
 }
 
-.videoTutoriales{
-    justify-self: center;
-    align-self: center;
-    width: 80%;
-}
-
-.video-1{
-    grid-area: a3;
-    padding-top: 10vh;
-}
-
-.video-2{
-    grid-area: a4;
-    padding-top: 10vh;
-}
-
-.video-3{
-    grid-area: a5;
-    padding-bottom: 10vh;
-}
-
-.video-4{
-    grid-area: a6;
-    padding-bottom: 10vh;
-}
-
-/* index */
 /* Formateo mainSectionUno */
 .mainSectionUno h2{
     font-size: 2.5rem;
@@ -232,7 +132,8 @@ main{
     font-size: 2.5rem;
     padding: 0 0.5rem;
     font-family: 'Roboto', sans-serif;
-    text-align: center;  
+    text-align: center;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);  
 }
 
 .mainSectionDosDivUno p{
@@ -242,52 +143,272 @@ main{
     text-align: center;  
 }
 
+
+/* Correspondiente a Tutoriales */
+/* Grid Titulares */
+
+.mainTutoriales{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 35vh 65vh 80vh 80vh;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a2"
+    "a3 a4"
+    "a5 a6";
+}
+
+.mainTitular_tutoriales{
+    grid-area: a1;
+    justify-self: center;
+    align-self: center;
+}
+
+.mainSectionUno_tutoriales{
+    grid-area: a2;
+    justify-self: center;
+    align-self: center;
+    background-color: #345B63;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 65vh;
+}
+
+.video-1{
+    grid-area: a3;
+}
+
+.video-2{
+    grid-area: a4;
+}
+
+.video-3{
+    grid-area: a5;
+}
+
+.video-4{
+    grid-area: a6;
+}
+
+/* Hago esto para que los videos no ocupen 100% */
+.videoTutoriales{
+    justify-self: center;
+    align-self: center;
+    width: 80%;
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.603);
+}
+
 /* tutoriales */
+/* Formateo mainTitular_tutoriales */
+.mainTitular_tutoriales h1{
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
 /* Formateo mainSectionUno_tutoriales */
 .mainSectionUno_tutoriales h2{
-    font-family: 'Roboto', sans-serif;
-    text-align: center;  
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    width: 80%;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
 .mainSectionUno_tutoriales p{
+    font-size: 1.7rem;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;  
+    text-align: center;
+    width: 80%;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-/* herramienta */
+/* Correspondiente a herramienta */
+/* Aplico Flex */
+.mainHerramienta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Aplico Flex para h1 y p */
+.mainTitular_herramienta{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Div Iframe */
+.divIframe{
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divIframeHerramienta{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Formateo mainTitular_herramienta */
+.mainTitular_herramienta h1{
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.mainTitular_herramienta p{
+    font-size: 1.7rem;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+    padding: 0 10vw;
+    padding-top: 3vh;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
 
 /* diseno */
-/* Formateo mainSectionUno_disenos */
-.mainSectionUno_disenos h2{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;  
+/* Aplico Grid */
+.divGrid_disenos{
+    display: grid;
+    grid-template-columns: 40vw 60vw;
+    grid-template-rows: 35vh 60vh 10vh 60vh 10vh;
+    grid-template-areas: 
+    "a1 a1"
+    "a2 a3"
+    "a4 a4"
+    "a5 a6"
+    "a7 a7";
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center
 }
 
-.mainSectionUno_disenos p{
-    font-size: 16px;
+.mainTitular_disenos{
+    grid-area: a1;
+}
+
+.divUno_disenos{
+    grid-area: a2;
+    background-color: #345B63;
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divDos_disenos{
+    grid-area: a3;
+    background-color: #345B63;
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divTres_disenos{
+    grid-area: a5;
+    background-color: #345B63;
+    height: 60vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divCuatro_disenos{
+    grid-area: a6;
+    background-color: #345B63;
+    height: 60vh;
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divSeparador_1{
+    grid-area: a4;
+    height: 10vh;
+}
+
+.divSeparador_2{
+    grid-area: a7;
+    height: 10vh;
+}
+
+.imagenShadow{
+    box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Formateo disenos */
+.mainTitular_disenos h1{
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+.divUno_disenos h2{
+    font-size: 2.7rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 2vw;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+.divUno_disenos p{
+    font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;  
+    padding: 0  2vw;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-/* Formateo mainSectionDos_disenos */
-.mainSectionDos_disenos h2{
-    font-size: 30px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;  
+.divTres_disenos h2{
+    font-size: 2.7rem;
+    font-family: 'Poppins', sans-serif;
+    padding: 0 2vw;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
 }
 
-.mainSectionDos_disenos p{
-    font-size: 16px;
+.divTres_disenos p{
+    font-size: 1.5rem;
     font-family: 'Ubuntu', sans-serif;
-    text-align: center;  
+    padding: 0  2vw;
+    color: white;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); 
 }
 
 /* contacto */
-.mainSectionUno_contacto form{
+
+.mainTitular_contacto{
     display: flex;
     justify-content: center;
+    align-items: center;
+    height: 20vh;
+}
+
+.mainTitular_contacto h1{
+    font-size: 3.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.mainSectionUno_contacto form{
+    height: 70vh;
+    display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -296,34 +417,9 @@ main{
 }
 
 .mainSectionUno_contacto label{
-    font-size: 25px;
+    font-size: 1.7rem;
     font-family: 'Roboto', sans-serif;
     text-align: center;
-}
-
-
-/* footer */
-.footer{
-    background-color: #112031;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.footer p{
-    font-size: 25px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    color: white;
-}
-
-.footerDiv{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 80vw;
 }
 
 /* Video Responsive */
@@ -343,45 +439,11 @@ main{
 	width: 100%;
 }
 
-/* HOVERS */
-
-.headerSectionUnoNavList a:hover{
-    color: white;
-    font-size: 1.77vw;
-}
-
 /* Media Query Responsive */
 
 @media screen and (max-width: 600px) {
 
-    .headerSectionUno{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding-bottom: 3vh;
-    }
-
-    .headerSectionUnoImg{
-        width: 13vw;
-        padding: 3vw;
-    }
-
-    .headerSectionUnoNavList{
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-   .headerSectionUnoNavList li{
-        font-size: 6vw;
-        font-family: 'Roboto', sans-serif;
-        display: inline-block;
-        padding: 0rem 1.5rem;
-    }
-  
+    /* Index */ 
     .mainIndex{
         display: grid;
         grid-template-columns: 1fr;
@@ -474,54 +536,108 @@ main{
         width: 80%;
     }
 
-    .footerDiv{
+     /* Tutoriales */
+
+     .mainTutoriales{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 50vh 90vh 55vh 55vh 55vh 55vh;
+        grid-template-areas: 
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5" 
+        "a6";
+    }
+    
+    .mainTitular_tutoriales{
+        grid-area: a1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .mainTitular_tutoriales h1{
+        font-size: 8vw;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 2vw 0;
+    }
+    
+    .mainSectionUno_tutoriales{
+        grid-area: a2;
+        justify-self: center;
+        align-self: center;
+        background-color: #345B63;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+        height: 90vh;
     }
 
-    .footer{
-        height: 55vh;
+    .mainSectionUno_tutoriales h2{
+        font-size: 7vw;
+        padding: 0 2vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center; 
+        color: white;  
     }
     
-    .footer p{
+    .mainSectionUno_tutoriales p{
         font-size: 5vw;
-        font-family: 'Roboto', sans-serif;
+        padding: 0 2vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center; 
+        color: white; 
+    }
+    
+    .video-1{
+        grid-area: a3;
+    }
+    
+    .video-2{
+        grid-area: a4;
+    }
+    
+    .video-3{
+        grid-area: a5;
+    }
+    
+    .video-4{
+        grid-area: a6;
+    }
+
+    /* Herramienta */
+
+    .mainTitular_herramienta{
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Formateo mainTitular_herramienta */
+    .mainTitular_herramienta h1{
+        font-size: 7vw;
+        font-family: 'Poppins', sans-serif;
         text-align: center;
-        color: white;
+    }
+  
+    .mainTitular_herramienta p{
+        font-size: 4.5vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        padding: 0 10vw;
+        padding-top: 3vh;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
 }
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
 
-    .headerSectionUno{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-        padding-bottom: 3vh;
-    }
-
-    .headerSectionUnoImg{
-        width: 8vw;
-        padding: 3vw;
-    }
-
-    .headerSectionUnoNavList{
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-    }
-    
-   .headerSectionUnoNavList li{
-        font-size: 4vw;
-        font-family: 'Roboto', sans-serif;
-        display: inline-block;
-        padding: 0rem 1.5rem;
-    }
-  
+    /* Index */
     .mainIndex{
         display: grid;
         grid-template-columns: 1fr;
@@ -612,24 +728,101 @@ main{
         width: 80%;
     }
 
-    .footerDiv{
+    /* Tutoriales */
+
+    .mainTutoriales{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 55vh 80vh 110vh 110vh 110vh 110vh;
+        grid-template-areas: 
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5" 
+        "a6";
+    }
+    
+    .mainTitular_tutoriales{
+        grid-area: a1;
+        justify-self: center;
+        align-self: center;
+    }
+
+    .mainTitular_tutoriales h1{
+        font-size: 7vw;
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        padding: 2vw 0;
+    }
+    
+    .mainSectionUno_tutoriales{
+        grid-area: a2;
+        justify-self: center;
+        align-self: center;
+        background-color: #345B63;
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
+        height: 80vh;
     }
 
-    .footer{
-        height: 65vh;
+    .mainSectionUno_tutoriales h2{
+        font-size: 5vw;
+        padding: 0 2vw;
+        font-family: 'Roboto', sans-serif;
+        text-align: center; 
+        color: white; 
     }
     
-    .footer p{
+    .mainSectionUno_tutoriales p{
         font-size: 3vw;
-        font-family: 'Roboto', sans-serif;
-        text-align: center;
-        color: white;
+        padding: 0 2vw;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center; 
+        color: white; 
     }
-}
+    
+    .video-1{
+        grid-area: a3;
+    }
+    
+    .video-2{
+        grid-area: a4;
+    }
+    
+    .video-3{
+        grid-area: a5;
+    }
+    
+    .video-4{
+        grid-area: a6;
+    }
 
-.video-row{
-    width: 100vw;
+    /* Herramienta */
+
+    .mainTitular_herramienta{
+        height: 65vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Formateo mainTitular_herramienta */
+    .mainTitular_herramienta h1{
+      font-size: 5.2vw;
+      font-family: 'Poppins', sans-serif;
+      text-align: center;
+    }
+
+    .mainTitular_herramienta p{
+      font-size: 3.2vw;
+      font-family: 'Ubuntu', sans-serif;
+      text-align: center;
+      padding: 0 10vw;
+      padding-top: 3vh;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+    }
 }
