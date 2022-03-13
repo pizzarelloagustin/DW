@@ -1,0 +1,45 @@
+/* Reseteo de Margenes y Padding */
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+@import './variables';
+@import './index';
+@import './tutoriales';
+@import './herramienta';
+@import './diseno';
+@import './contacto';
+  
+  /* Dimensiones al Body */
+  body {
+    height: auto;
+    width: 100vw;
+  }
+  
+  /* Corresponde al nav */
+  .navBootstrap {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.603);
+  }
+  
+  /* CSS main general */
+  main {
+    background-color: #d4ecdd;
+  }
+  
+  /* Video Responsive */
+  
+  .video-responsive {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+  }
+  
+  .video-responsive iframe {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }

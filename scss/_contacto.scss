@@ -1,0 +1,31 @@
+/* contacto */
+  
+.mainTitular_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+  }
+  
+  .mainTitular_contacto h1 {
+    font-size: 3.5rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .mainSectionUno_contacto form {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .mainSectionUno_contacto form div {
+    padding-bottom: 20px;
+  }
+  
+  .mainSectionUno_contacto label {
+    font-size: 1.7rem;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+  }
