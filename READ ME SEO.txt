@@ -1,0 +1,4 @@
+Para el desarrollo de SEO se puedo observar lo siguiente:
+Las paginas solo tiene un titular 
+He aplicado etiquetas meta description y keyword en el index
+He realizado imagenes en la pagina de diseños en formato SVG
