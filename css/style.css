@@ -18,12 +18,8 @@
   justify-self: center;
   align-self: center; }
   .mainTitular h1 {
-    font-size: 3.5rem;
     font-family: "Poppins", sans-serif;
-    text-align: center; }
-  .mainTitular p {
-    font-size: 16px;
-    font-family: "Ubuntu", sans-serif;
+    font-size: 3.5rem;
     text-align: center; }
 
 /* segundo Area Index */
@@ -31,16 +27,16 @@
   grid-area: a2;
   position: relative; }
   .mainSectionUno h2 {
-    font-size: 2.5rem;
-    padding: 0 0.5rem;
     font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
     text-align: center;
+    padding: 0 0.5rem;
     color: white; }
   .mainSectionUno p {
-    font-size: 1.4rem;
-    padding: 0 0.5rem;
     font-family: "Ubuntu", sans-serif;
+    font-size: 1.4rem;
     text-align: center;
+    padding: 0 0.5rem;
     color: white; }
 
 .mainSectionUnoBackground {
@@ -79,16 +75,16 @@
   justify-content: space-evenly;
   height: 400px; }
   .mainSectionDosDivUno h2 {
-    font-size: 2.5rem;
-    padding: 0 0.5rem;
     font-family: "Roboto", sans-serif;
+    font-size: 2.5rem;
     text-align: center;
+    padding: 0 0.5rem;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
   .mainSectionDosDivUno p {
-    font-size: 1.4rem;
-    padding: 0 0.5rem;
     font-family: "Ubuntu", sans-serif;
-    text-align: center; }
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 0 0.5rem; }
 
 @media screen and (max-width: 600px) {
   .mainIndex {
@@ -101,13 +97,13 @@
     justify-self: center;
     align-self: center; }
     .mainTitular h1 {
-      font-size: 8vw;
       font-family: "Poppins", sans-serif;
+      font-size: 8vw;
       text-align: center;
       padding: 2vw 0; }
     .mainTitular p {
-      font-size: 4vw;
       font-family: "Ubuntu", sans-serif;
+      font-size: 4vw;
       text-align: center; }
   .mainSectionUnoDiv {
     position: absolute;
@@ -120,16 +116,16 @@
     align-items: center;
     justify-content: space-evenly; }
   .mainSectionUno h2 {
-    font-size: 7vw;
-    padding: 0 2vw;
     font-family: "Roboto", sans-serif;
+    font-size: 7vw;
     text-align: center;
+    padding: 0 2vw;
     color: white; }
   .mainSectionUno p {
-    font-size: 5vw;
-    padding: 0 2vw;
     font-family: "Ubuntu", sans-serif;
+    font-size: 5vw;
     text-align: center;
+    padding: 0 2vw;
     color: white; }
   .mainSectionDosDivUno {
     grid-area: a3;
@@ -141,17 +137,17 @@
     justify-content: space-evenly;
     height: 50hv; }
     .mainSectionDosDivUno h2 {
-      font-size: 7vw;
-      padding: 0 2vw;
-      padding-top: 20vw;
       font-family: "Roboto", sans-serif;
-      text-align: center; }
+      font-size: 7vw;
+      text-align: center;
+      padding: 0 2vw;
+      padding-top: 20vw; }
     .mainSectionDosDivUno p {
-      font-size: 5vw;
-      padding: 0 10vw;
-      padding-bottom: 10vw;
       font-family: "Ubuntu", sans-serif;
-      text-align: center; }
+      font-size: 5vw;
+      text-align: center;
+      padding: 0 10vw;
+      padding-bottom: 10vw; }
   .mainSectionDosDivDos {
     grid-area: a4;
     justify-self: center;
@@ -170,13 +166,13 @@
     justify-self: center;
     align-self: center; }
     .mainTitular h1 {
-      font-size: 7vw;
       font-family: "Poppins", sans-serif;
+      font-size: 7vw;
       text-align: center;
       padding: 2vw 0; }
     .mainTitular p {
-      font-size: 4vw;
       font-family: "Ubuntu", sans-serif;
+      font-size: 4vw;
       text-align: center; }
   .mainSectionUnoDiv {
     position: absolute;
@@ -189,16 +185,16 @@
     align-items: center;
     justify-content: space-evenly; }
   .mainSectionUno h2 {
-    font-size: 5vw;
-    padding: 0 2vw;
     font-family: "Roboto", sans-serif;
+    font-size: 5vw;
     text-align: center;
+    padding: 0 2vw;
     color: white; }
   .mainSectionUno p {
-    font-size: 3vw;
-    padding: 0 2vw;
     font-family: "Ubuntu", sans-serif;
+    font-size: 3vw;
     text-align: center;
+    padding: 0 2vw;
     color: white; }
   .mainSectionDosDivUno {
     grid-area: a3;
@@ -210,15 +206,15 @@
     justify-content: space-evenly;
     height: 80hv; }
     .mainSectionDosDivUno h2 {
-      font-size: 6vw;
-      padding: 0 2vw;
       font-family: "Roboto", sans-serif;
-      text-align: center; }
+      font-size: 6vw;
+      text-align: center;
+      padding: 0 2vw; }
     .mainSectionDosDivUno p {
-      font-size: 4.2vw;
-      padding: 0 10vw;
       font-family: "Ubuntu", sans-serif;
-      text-align: center; }
+      font-size: 4.2vw;
+      text-align: center;
+      padding: 0 10vw; }
   .mainSectionDosDivDos {
     grid-area: a4;
     justify-self: center;
@@ -238,30 +234,30 @@
   justify-self: center;
   align-self: center; }
   .mainTitular_tutoriales h1 {
-    font-size: 3.5rem;
     font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
     text-align: center; }
 
 .mainSectionUno_tutoriales {
   grid-area: a2;
   justify-self: center;
   align-self: center;
-  background-color: #345b63;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  background-color: #345b63;
   height: 65vh; }
   .mainSectionUno_tutoriales h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 3rem;
-    font-family: "Poppins", sans-serif;
     text-align: center;
     width: 80%;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
   .mainSectionUno_tutoriales p {
-    font-size: 1.7rem;
     font-family: "Ubuntu", sans-serif;
+    font-size: 1.7rem;
     text-align: center;
     width: 80%;
     color: white;
@@ -297,31 +293,31 @@
     justify-self: center;
     align-self: center; }
     .mainTitular_tutoriales h1 {
-      font-size: 8vw;
       font-family: "Poppins", sans-serif;
+      font-size: 8vw;
       text-align: center;
       padding: 2vw 0; }
   .mainSectionUno_tutoriales {
     grid-area: a2;
     justify-self: center;
     align-self: center;
-    background-color: #345b63;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #345b63;
     height: 90vh; }
     .mainSectionUno_tutoriales h2 {
-      font-size: 7vw;
-      padding: 0 2vw;
       font-family: "Roboto", sans-serif;
+      font-size: 7vw;
       text-align: center;
+      padding: 0 2vw;
       color: white; }
     .mainSectionUno_tutoriales p {
-      font-size: 5vw;
-      padding: 0 2vw;
       font-family: "Ubuntu", sans-serif;
+      font-size: 5vw;
       text-align: center;
+      padding: 0 2vw;
       color: white; }
   .video-1 {
     grid-area: a3; }
@@ -344,31 +340,31 @@
     justify-self: center;
     align-self: center; }
     .mainTitular_tutoriales h1 {
-      font-size: 7vw;
       font-family: "Poppins", sans-serif;
+      font-size: 7vw;
       text-align: center;
       padding: 2vw 0; }
   .mainSectionUno_tutoriales {
     grid-area: a2;
     justify-self: center;
     align-self: center;
-    background-color: #345b63;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    background-color: #345b63;
     height: 80vh; }
     .mainSectionUno_tutoriales h2 {
-      font-size: 5vw;
-      padding: 0 2vw;
       font-family: "Roboto", sans-serif;
+      font-size: 5vw;
       text-align: center;
+      padding: 0 2vw;
       color: white; }
     .mainSectionUno_tutoriales p {
-      font-size: 3vw;
-      padding: 0 2vw;
       font-family: "Ubuntu", sans-serif;
+      font-size: 3vw;
       text-align: center;
+      padding: 0 2vw;
       color: white; }
   .video-1 {
     grid-area: a3; }
@@ -395,6 +391,12 @@
   justify-content: center;
   align-items: center; }
 
+.cardSection {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 70vh; }
+
 /* Div Iframe */
 .divIframe {
   height: 85vh;
@@ -408,13 +410,13 @@
 
 /* Formateo mainTitular_herramienta */
 .mainTitular_herramienta h1 {
-  font-size: 3.5rem;
   font-family: "Poppins", sans-serif;
+  font-size: 3.5rem;
   text-align: center; }
 
 .mainTitular_herramienta p {
-  font-size: 1.7rem;
   font-family: "Ubuntu", sans-serif;
+  font-size: 1.7rem;
   text-align: center;
   padding: 0 10vw;
   padding-top: 3vh;
@@ -428,16 +430,22 @@
     justify-content: center;
     align-items: center; }
     .mainTitular_herramienta h1 {
-      font-size: 7vw;
       font-family: "Poppins", sans-serif;
+      font-size: 7vw;
       text-align: center; }
     .mainTitular_herramienta p {
-      font-size: 4.5vw;
       font-family: "Ubuntu", sans-serif;
+      font-size: 4.5vw;
       text-align: center;
       padding: 0 10vw;
       padding-top: 3vh;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); } }
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+  .cardSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130vh; } }
 
 @media screen and (max-width: 1024px) and (min-width: 600px) {
   /* Herramienta */
@@ -448,16 +456,22 @@
     justify-content: center;
     align-items: center; }
     .mainTitular_herramienta h1 {
-      font-size: 5.2vw;
       font-family: "Poppins", sans-serif;
+      font-size: 5.2vw;
       text-align: center; }
     .mainTitular_herramienta p {
-      font-size: 3.2vw;
       font-family: "Ubuntu", sans-serif;
+      font-size: 3.2vw;
       text-align: center;
       padding: 0 10vw;
       padding-top: 3vh;
-      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); } }
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+  .cardSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 130vh; } }
 
 /* diseno */
 /* Aplico Grid */
@@ -474,8 +488,8 @@
 .mainTitular_disenos {
   grid-area: a1; }
   .mainTitular_disenos h1 {
-    font-size: 3.5rem;
     font-family: "Poppins", sans-serif;
+    font-size: 3.5rem;
     text-align: center; }
 
 .divUno_disenos {
@@ -488,14 +502,16 @@
   justify-content: center;
   align-items: center; }
   .divUno_disenos h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 2.7rem;
-    font-family: "Poppins", sans-serif;
+    text-align: center;
     padding: 0 2vw;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
   .divUno_disenos p {
-    font-size: 1.5rem;
     font-family: "Ubuntu", sans-serif;
+    font-size: 1.55rem;
+    text-align: center;
     padding: 0 2vw;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
@@ -519,14 +535,16 @@
   justify-content: center;
   align-items: center; }
   .divTres_disenos h2 {
+    font-family: "Roboto", sans-serif;
     font-size: 2.7rem;
-    font-family: "Poppins", sans-serif;
+    text-align: center;
     padding: 0 2vw;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
   .divTres_disenos p {
-    font-size: 1.5rem;
     font-family: "Ubuntu", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
     padding: 0 2vw;
     color: white;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
@@ -551,6 +569,182 @@
 .imagenShadow {
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7); }
 
+@media screen and (max-width: 600px) {
+  .divGrid_disenos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 65vh 65vh 20vh 65vh 65vh 20vh;
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7";
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center; }
+  .mainTitular_disenos {
+    grid-area: a1; }
+    .mainTitular_disenos h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 8vw;
+      text-align: center; }
+  .divUno_disenos {
+    grid-area: a2;
+    background-color: #345b63;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .divUno_disenos h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 7vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+    .divUno_disenos p {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 5vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+  .divDos_disenos {
+    grid-area: a3;
+    background-color: #345b63;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .divDos_disenos .imagenShadow img {
+      height: auto;
+      width: 90vw; }
+  .divTres_disenos {
+    grid-area: a5;
+    background-color: #345b63;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .divTres_disenos h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 7vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+    .divTres_disenos p {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 5vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+  .divCuatro_disenos {
+    grid-area: a6;
+    background-color: #345b63;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .divCuatro_disenos .imagenShadow img {
+      height: auto;
+      width: 90vw; }
+  .divSeparador_1 {
+    grid-area: a4;
+    height: 20vh; }
+  .divSeparador_2 {
+    grid-area: a7;
+    height: 20vh; } }
+
+@media screen and (max-width: 1024px) and (min-width: 600px) {
+  .divGrid_disenos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50vh 55vh 65vh 20vh 55vh 65vh 20vh;
+    grid-template-areas: "a1" "a2" "a3" "a4" "a5" "a6" "a7";
+    justify-content: space-evenly;
+    justify-items: center;
+    align-content: space-evenly;
+    align-items: center; }
+  .mainTitular_disenos {
+    grid-area: a1; }
+    .mainTitular_disenos h1 {
+      font-family: "Poppins", sans-serif;
+      font-size: 7vw;
+      text-align: center; }
+  .divUno_disenos {
+    grid-area: a2;
+    background-color: #345b63;
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .divUno_disenos h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 5vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+    .divUno_disenos p {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+  .divDos_disenos {
+    grid-area: a3;
+    background-color: #345b63;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .divTres_disenos {
+    grid-area: a5;
+    background-color: #345b63;
+    height: 55vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .divTres_disenos h2 {
+      font-family: "Roboto", sans-serif;
+      font-size: 5vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+    .divTres_disenos p {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 3vw;
+      text-align: center;
+      padding: 0 2vw;
+      color: white;
+      text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7); }
+  .divCuatro_disenos {
+    grid-area: a6;
+    background-color: #345b63;
+    height: 65vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .divSeparador_1 {
+    grid-area: a4;
+    height: 20vh; }
+  .divSeparador_2 {
+    grid-area: a7;
+    height: 20vh; } }
+
 /* contacto */
 .mainTitular_contacto {
   display: flex;
@@ -558,22 +752,68 @@
   align-items: center;
   height: 20vh; }
   .mainTitular_contacto h1 {
+    font-family: "Poppins", sans-serif;
     font-size: 3.5rem;
-    font-family: "Poppins", sans-serif; }
+    text-align: center; }
 
-.mainSectionUno_contacto form {
-  height: 70vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center; }
-  .mainSectionUno_contacto form div {
-    padding-bottom: 20px; }
+.mainSectionUno_contacto {
+  padding: 6vh 0; }
+  .mainSectionUno_contacto form {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+    .mainSectionUno_contacto form div {
+      padding-bottom: 20px; }
+  .mainSectionUno_contacto label {
+    font-family: "Roboto", sans-serif;
+    font-size: 1.7rem;
+    text-align: center; }
 
-.mainSectionUno_contacto label {
-  font-size: 1.7rem;
-  font-family: "Roboto", sans-serif;
-  text-align: center; }
+/* Button sacado de https://cssbuttons.io/detail/cssbuttons-io/slippery-jellyfish-67 */
+button {
+  --color: $tercerColor;
+  font-family: inherit;
+  display: inline-block;
+  width: 8em;
+  height: 2.6em;
+  line-height: 2.5em;
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  border: 2px solid var(--color);
+  transition: color .5s;
+  z-index: 1;
+  font-size: 17px;
+  border-radius: 6px;
+  font-weight: 500;
+  color: var(--color); }
+
+button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  background: var(--color);
+  height: 150px;
+  width: 200px;
+  border-radius: 50%; }
+
+button:hover {
+  color: white; }
+
+button:before {
+  top: 100%;
+  left: 100%;
+  transition: all .7s; }
+
+button:hover:before {
+  top: -30px;
+  left: -30px; }
+
+button:active:before {
+  background: #345b63;
+  transition: background 0s; }
 
 /* Dimensiones al Body */
 body {

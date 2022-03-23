@@ -20,9 +20,7 @@
     grid-area: a1;
 
     & h1 {
-      font-size: 3.5rem;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
+      @include font(h1,3.5rem);
     }
   }
   
@@ -31,22 +29,17 @@
     background-color: $segundoColor;
     height: 60vh;
     width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-col-center;
 
     & h2 {
-      font-size: 2.7rem;
-      font-family: "Poppins", sans-serif;
+      @include font(h2,2.7rem);
       padding: 0 2vw;
       color: $blanco;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
 
     & p {
-      font-size: 1.5rem;
-      font-family: "Ubuntu", sans-serif;
+      @include font(p,1.55rem);
       padding: 0 2vw;
       color: $blanco;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -58,9 +51,7 @@
     background-color: $segundoColor;
     height: 60vh;
     width: 60vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
   
   .divTres_disenos {
@@ -68,22 +59,17 @@
     background-color: $segundoColor;
     height: 60vh;
     width: 40vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-col-center;
 
     & h2 {
-      font-size: 2.7rem;
-      font-family: "Poppins", sans-serif;
+      @include font(h2,2.7rem);
       padding: 0 2vw;
       color: $blanco;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
     }
 
     & p {
-      font-size: 1.5rem;
-      font-family: "Ubuntu", sans-serif;
+      @include font(p,1.5rem);
       padding: 0 2vw;
       color: $blanco;
       text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -95,9 +81,7 @@
     background-color: $segundoColor;
     height: 60vh;
     width: 60vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
   }
   
   .divSeparador_1 {
@@ -112,4 +96,210 @@
   
   .imagenShadow {
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.7);
+  }
+
+  @media screen and (max-width: 600px) {
+    .divGrid_disenos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50vh 65vh 65vh 20vh 65vh 65vh 20vh;
+      grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+        "a7";
+      justify-content: space-evenly;
+      justify-items: center;
+      align-content: space-evenly;
+      align-items: center;
+    }
+    
+    .mainTitular_disenos {
+      grid-area: a1;
+  
+      & h1 {
+        @include font(h1,8vw);
+      }
+    }
+    
+    .divUno_disenos {
+      grid-area: a2;
+      background-color: $segundoColor;
+      height: 65vh;
+      width: 100vw;
+      @include flex-col-center;
+  
+      & h2 {
+        @include font(h2,7vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+  
+      & p {
+        @include font(p,5vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+    }
+    
+    .divDos_disenos {
+      grid-area: a3;
+      background-color: $segundoColor;
+      height: 65vh;
+      width: 100vw;
+      @include flex-center;
+
+      & .imagenShadow img{
+        height: auto;
+        width: 90vw;
+      }
+    }
+    
+    .divTres_disenos {
+      grid-area: a5;
+      background-color: $segundoColor;
+      height: 65vh;
+      width: 100vw;
+      @include flex-col-center;
+  
+      & h2 {
+        @include font(h2,7vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+  
+      & p {
+        @include font(p,5vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+    }
+    
+    .divCuatro_disenos {
+      grid-area: a6;
+      background-color: $segundoColor;
+      height: 65vh;
+      width: 100vw;
+      @include flex-center;
+
+      & .imagenShadow img{
+        height: auto;
+        width: 90vw;
+      }
+    }
+    
+    .divSeparador_1 {
+      grid-area: a4;
+      height: 20vh;
+    }
+    
+    .divSeparador_2 {
+      grid-area: a7;
+      height: 20vh;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) and (min-width: 600px) {
+    .divGrid_disenos {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 50vh 55vh 65vh 20vh 55vh 65vh 20vh;
+      grid-template-areas:
+        "a1"
+        "a2"
+        "a3"
+        "a4"
+        "a5"
+        "a6"
+        "a7";
+      justify-content: space-evenly;
+      justify-items: center;
+      align-content: space-evenly;
+      align-items: center;
+    }
+    
+    .mainTitular_disenos {
+      grid-area: a1;
+  
+      & h1 {
+        @include font(h1,7vw);
+      }
+    }
+    
+    .divUno_disenos {
+      grid-area: a2;
+      background-color: $segundoColor;
+      height: 55vh;
+      width: 100vw;
+      @include flex-col-center;
+  
+      & h2 {
+        @include font(h2,5vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+  
+      & p {
+        @include font(p,3vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+    }
+    
+    .divDos_disenos {
+      grid-area: a3;
+      background-color: $segundoColor;
+      height: 65vh;
+      width: 100vw;
+      @include flex-center;
+    }
+    
+    .divTres_disenos {
+      grid-area: a5;
+      background-color: $segundoColor;
+      height: 55vh;
+      width: 100vw;
+      @include flex-col-center;
+  
+      & h2 {
+        @include font(h2,5vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+  
+      & p {
+        @include font(p,3vw);
+        padding: 0 2vw;
+        color: $blanco;
+        text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+      }
+    }
+    
+    .divCuatro_disenos {
+      grid-area: a6;
+      background-color: $segundoColor;
+      height: 65vh;
+      width: 100vw;
+      @include flex-center;
+    }
+    
+    .divSeparador_1 {
+      grid-area: a4;
+      height: 20vh;
+    }
+    
+    .divSeparador_2 {
+      grid-area: a7;
+      height: 20vh;
+    }
   }

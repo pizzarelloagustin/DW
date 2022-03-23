@@ -15,19 +15,10 @@
 
 .mainTitular {
   grid-area: a1;
-  justify-self: center;
-  align-self: center;
+  @include self-center;
 
   & h1 {
-    font-size: 3.5rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-  }
-
-  & p {
-    font-size: 16px;
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
+    @include font(h1,3.5rem);
   }
 }
 
@@ -38,18 +29,14 @@
   position: relative;
 
   & h2 {
-    font-size: 2.5rem;
+    @include font(h2,2.5rem);
     padding: 0 0.5rem;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
     color: $blanco;
   }
 
   & p {
-    font-size: 1.4rem;
+    @include font(p,1.4rem);
     padding: 0 0.5rem;
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
     color: $blanco;
   }
 }
@@ -67,18 +54,14 @@
   width: 35vw;
   height: 65vh;
   background-color: $tercerColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  @include flex-col-se-center;
 }
 
 /* Tercer Area Index */
 
 .mainSectionDosDivDos {
   grid-area: a3;
-  justify-self: center;
-  align-self: center;
+  @include self-center;
   width: 80%;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.603);
 }
@@ -87,27 +70,19 @@
 
 .mainSectionDosDivUno {
   grid-area: a4;
-  justify-self: center;
-  align-self: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
+  @include self-center;
+  @include flex-col-se-center;
   height: 400px;
 
   & h2 {
-    font-size: 2.5rem;
+    @include font(h2,2.5rem);
     padding: 0 0.5rem;
-    font-family: "Roboto", sans-serif;
-    text-align: center;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   }
   
   & p {
-    font-size: 1.4rem;
+    @include font(p,1.4rem);
     padding: 0 0.5rem;
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
   }
 }
 
@@ -125,20 +100,15 @@
 
   .mainTitular {
     grid-area: a1;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
 
     & h1 {
-      font-size: 8vw;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
+      @include font(h1,8vw);
       padding: 2vw 0;
     }
 
     & p {
-      font-size: 4vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
+      @include font(p,4vw);
     }
   }
 
@@ -148,61 +118,45 @@
     width: 80vw;
     height: 75vh;
     background-color: $tercerColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex-col-se-center;
   }
 
   .mainSectionUno {
     & h2 {
-      font-size: 7vw;
+      @include font(h2,7vw);
       padding: 0 2vw;
-      font-family: "Roboto", sans-serif;
-      text-align: center;
       color: $blanco;
     }
 
     & p {
-      font-size: 5vw;
+      @include font(p,5vw);
       padding: 0 2vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
       color: $blanco;
     }
   }
 
   .mainSectionDosDivUno {
     grid-area: a3;
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include self-center;
+    @include flex-col-se-center;
     height: 50hv;
 
     & h2 {
-      font-size: 7vw;
+      @include font(h2,7vw);
       padding: 0 2vw;
       padding-top: 20vw;
-      font-family: "Roboto", sans-serif;
-      text-align: center;
     }
   
     & p {
-      font-size: 5vw;
+      @include font(p,5vw);
       padding: 0 10vw;
       padding-bottom: 10vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
     }
   }
 
   .mainSectionDosDivDos {
     grid-area: a4;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
     width: 80%;
   }
 }
@@ -222,20 +176,15 @@
 
   .mainTitular {
     grid-area: a1;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
 
     & h1 {
-      font-size: 7vw;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
+      @include font(h1,7vw);
       padding: 2vw 0;
     }
 
     & p {
-      font-size: 4vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
+      @include font(p,4vw);
     }
   }
 
@@ -245,59 +194,43 @@
     width: 80vw;
     height: 80vh;
     background-color: $tercerColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include flex-col-se-center;
   }
 
   .mainSectionUno {
     & h2 {
-      font-size: 5vw;
+      @include font(h2,5vw);
       padding: 0 2vw;
-      font-family: "Roboto", sans-serif;
-      text-align: center;
       color: $blanco;
     }
 
     & p {
-      font-size: 3vw;
+      @include font(p,3vw);
       padding: 0 2vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
       color: $blanco;
     }
   }
 
   .mainSectionDosDivUno {
     grid-area: a3;
-    justify-self: center;
-    align-self: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
+    @include self-center;
+    @include flex-col-se-center;
     height: 80hv;
 
     & h2 {
-      font-size: 6vw;
+      @include font(h2,6vw);
       padding: 0 2vw;
-      font-family: "Roboto", sans-serif;
-      text-align: center;
     }
   
     & p {
-      font-size: 4.2vw;
+      @include font(p,4.2vw);
       padding: 0 10vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
     }
   }
 
   .mainSectionDosDivDos {
     grid-area: a4;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
     width: 80%;
   }
 }

@@ -1,0 +1,40 @@
+@mixin font($family, $size, $align: center) {
+  @if $family == h1 {
+    font-family: "Poppins", sans-serif;
+  } @else if $family == h2 {
+    font-family: "Roboto", sans-serif;
+  } @else if $family == label {
+    font-family: "Roboto", sans-serif;
+  } @else if $family == p {
+    font-family: "Ubuntu", sans-serif;
+  }
+
+  font-size: $size;
+
+  text-align: $align;
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+@mixin flex-col-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-col-se-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+@mixin self-center {
+    justify-self: center;
+    align-self: center;
+}

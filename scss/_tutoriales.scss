@@ -14,40 +14,29 @@
 
 .mainTitular_tutoriales {
   grid-area: a1;
-  justify-self: center;
-  align-self: center;
+  @include self-center;
 
   & h1 {
-    font-size: 3.5rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
+    @include font(h1,3.5rem);
   }
 }
 
 .mainSectionUno_tutoriales {
   grid-area: a2;
-  justify-self: center;
-  align-self: center;
+  @include self-center;
+  @include flex-col-se-center;
   background-color: $segundoColor;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
   height: 65vh;
 
   & h2 {
-    font-size: 3rem;
-    font-family: "Poppins", sans-serif;
-    text-align: center;
+    @include font(h2,3rem);
     width: 80%;
     color: $blanco;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
   }
 
   & p {
-    font-size: 1.7rem;
-    font-family: "Ubuntu", sans-serif;
-    text-align: center;
+    @include font(p,1.7rem);
     width: 80%;
     color: $blanco;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
@@ -72,8 +61,7 @@
 
 /* Hago esto para que los videos no ocupen 100% */
 .videoTutoriales {
-  justify-self: center;
-  align-self: center;
+  @include self-center;
   width: 80%;
   box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.603);
 }
@@ -94,41 +82,30 @@
 
   .mainTitular_tutoriales {
     grid-area: a1;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
 
     & h1 {
-      font-size: 8vw;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
+      @include font(h1,8vw);
       padding: 2vw 0;
     }
   }
 
   .mainSectionUno_tutoriales {
     grid-area: a2;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
+    @include flex-col-se-center;
     background-color: $segundoColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     height: 90vh;
 
     & h2 {
-      font-size: 7vw;
+      @include font(h2,7vw);
       padding: 0 2vw;
-      font-family: "Roboto", sans-serif;
-      text-align: center;
       color: $blanco;
     }
 
     & p {
-      font-size: 5vw;
+      @include font(p,5vw);
       padding: 0 2vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
       color: $blanco;
     }
   }
@@ -168,41 +145,30 @@
 
   .mainTitular_tutoriales {
     grid-area: a1;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
 
     & h1 {
-      font-size: 7vw;
-      font-family: "Poppins", sans-serif;
-      text-align: center;
+      @include font(h1,7vw);
       padding: 2vw 0;
     }
   }
 
   .mainSectionUno_tutoriales {
     grid-area: a2;
-    justify-self: center;
-    align-self: center;
+    @include self-center;
+    @include flex-col-se-center;
     background-color: $segundoColor;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
     height: 80vh;
 
     & h2 {
-      font-size: 5vw;
+      @include font(h2,5vw);
       padding: 0 2vw;
-      font-family: "Roboto", sans-serif;
-      text-align: center;
       color: $blanco;
     }
 
     & p {
-      font-size: 3vw;
+      @include font(p,3vw);
       padding: 0 2vw;
-      font-family: "Ubuntu", sans-serif;
-      text-align: center;
       color: $blanco;
     }
   }
